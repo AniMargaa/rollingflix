@@ -1,0 +1,57 @@
+.front-page{
+    font-size: 16px;
+    min-height: 40.62em;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em; 
+}
+
+.front-page h1{
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+}
+.front-page p{
+    position: absolute;
+    font-size: 17px;
+    color: rgb(255, 233, 233);
+    top: 250px;
+    left: 17px;
+    width: 450px;
+
+}
+
+.front-page button{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    color:rgb(211, 208, 208); ;
+    top:390px;
+    left:25px;
+    background-color: rgba(0, 0, 0, 0.911);
+    border: solid 1px;
+    border-radius: 6px;
+}
+
+.btn img{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    top: 10px;
+    left: 10px;
+    display: inline;
+}
+
+.btn h3{
+    font-size: 13px;
+    display: inline;
+    padding-left: 5px;
+}
+
+@media (max-width:720px) {
+    .front-page{    
+        
+    }    
+}

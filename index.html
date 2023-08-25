@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RollingFlix</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./paginaprincipal.css">
@@ -45,21 +45,218 @@
         </div>
       </nav>
       </header>
+
       <main>
-        <section>
-          <img src="./img/oOpUVC7LGK87epof3DphR1A88sL.jpg" alt="">
-         <div class="front-page">
-             <h1>PELICULA DESTACADA</h1>
-             <p><strong>Malekith, un enemigo más antiguo que el universo, regresa a la Tierra para cumplir su plan destructor. Thor debe enfrentarse a un rival al que ni siquiera Odín parece poder detener y, desesperado, libera a su hermano Loki para que lo ayude.</strong></p>
-             <button type="button"  class="btn btn-primary" width="50">
-              <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-play-icon-png-image_695746.jpg" alt="">
-              <h3>
-                Ver Ahora
-              </h3>
-             </button>
-           </div>
-         </div>
-        </section>
+        <div class="front-page">
+          <div class="container">
+            <h3 class="title">Pelicula Destacada</h3>
+            <p class="description"><strong>Malekith, un enemigo más antiguo que el universo, regresa a la Tierra para cumplir su plan destructor. Thor debe enfrentarse a un rival al que ni siquiera Odín parece poder detener y, desesperado, libera a su hermano Loki para que lo ayude</strong></p>
+            <button class="btn">Ver ahora</button>
+          </div>
+        </div>
+        <h1 class="titleCarousel">Peliculas Recomendadas</h1>
+        <div id="carouselExampleControls" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center mb-5 p-4">
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/38lS4p4YArXC2AyxUm4LJdkK6g8.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/zaX13F2m7taSiyHzS3fKEY3EvgI.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/pwjgP0hT78umrb7Th7V7vhwBmP1.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/xWp8VB2Bt6mvVTTSXt0kFRy0A9b.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/yQf8OBiRwMxkYRKY138BlAYDFs7.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+              </div>  
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center align-items-center mb-5 p-4">
+                <div class="div-img mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/uahy4sZXrrYNrQBU7FZEWJAXiZm.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/ogeD1WlNWVxKHeEmeX7eaTKSpvG.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/gd1QPnOzopd6lr2DDmZS1id7FRx.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class=mx-1>
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/Ys8UIGWJpd2TMuQk8fU77W3mBz.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+                <div class="mx-1">
+                  <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/8U7yoxEQsyJQc3RBCjNJu2d5uct.jpg" class=" d-inline-flex w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <h1 class="titleCarousel">Peliculas Premiadas</h1>
+      <div id="carouselPremiadas" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center mb-5 p-4">
+              <div class="div-img mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/rPpxrz8o0svAPCLucjsEdMXoDfX.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/zdT9pVcXEKo2wpQb4HDPRWMQXvp.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/zwsLgwQbskbkzE4OS5Jom62ha4p.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/cI7rsBuPVr9rQUsKBnscmTZJUz2.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/tSJBq2WsGgOmKXF8MDwfcqyeZoJ.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+            </div>  
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center mb-5 p-4">
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/mNjSpNNmj46M66ZPLfpGBEPFnNZ.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/1Ei7klVVpCpGCko616FPRuAlFUC.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class=mx-1>
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/1eHMicYRA0BBnWUyXofyDCMnVJv.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/jMTvYnFr89K0RxO9K2sz4poWCCc.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+              <div class="mx-1">
+                <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/2fS9cpar9rzxixwnRptg4bGmIym.jpg" class=" d-inline-flex w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPremiadas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPremiadas" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <h1 class="titleCarousel">Mas populares</h1>
+    <div id="carouselPopulares" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center mb-5 p-4">
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/fkiJnZNS303zWMBM3hjSnenixi9.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/h61Kc0NC7d90jNwXfBx5js7DnSQ.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/jcQ5ez9AdJIq9IHVo61PqDPLQsS.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/dQwVq3Ahjf6661HmiLGjWWEu7ye.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/zd6rVGlBnHTs231jZLu9ul0GDKy.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+          </div>  
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center mb-5 p-4">
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/mio2inUjVh6L4C2foHfpaeYzlMg.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/tYGRC6ixeC3r71FqQHYeQGHYTV6.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class=mx-1>
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/pNOccytgkGuyofTLmh1sqEfTJuE.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/qd6CcMyW4CLc4n20kfqagTZ1pP3.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+            <div class="mx-1">
+              <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/tITEzi9TaNeu8hETEpcPcB9ILXs.jpg" class=" d-inline-flex w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopulares" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPopulares" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <h1 class="titleCarousel">Aclamadas por la critica</h1>
+  <div id="carouselCritica" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center mb-5 p-4">
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/l7ZoZJF8ag81kayP6ZRk8bMFFAk.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/1RLxqMu8o1pqhXxNhTVYJ9pmB4H.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/4yRqdgulLRtcCO5ZUOs2G5v874l.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/acP4wOeu64EGu08qHJa8takgGvB.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/qL2qrAwix2rI296ROnSMwNXjKGK.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+        </div>  
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center mb-5 p-4">
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/6Pv9WEk0k3PXAtW7IWfQpbA2ezx.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/bSkW9L5rxcgCASRasJTTgXgSunU.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class=mx-1>
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/tzqegi5m05VEFGmUX4Uk9xsSE1P.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/wxvOMIwEkvqB3qYMVSXoGu5rkC5.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+          <div class="mx-1">
+            <img src="https://www.themoviedb.org/t/p/w500_and_h282_face/39QpDXKtzVP4gkGxZIkjJNkOTWr.jpg" class=" d-inline-flex w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCritica" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCritica" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
       </main>
 
 
@@ -103,43 +300,7 @@
         </div>
       </footer>
       
-    <!-- <footer class="footer">
-      <div class="container text-center text-md-start ">
-        <div class="row text-center text-md-start">
-          <div class="footer-col col-md-3 col-lg-3 col-xl-3 mx-auto m-3">
-            <h2 class="logo ">RollingFlix</h2>
-          </div>
-          <div class="footer-col col-md-2 col-lg-2 col-xl-2 mx-auto m-3">
-            <h4 class="mb-4">Contacto</h4>
-            <hr class="mb-4">
-            <p>
-              <li class="fas fa-location"></li>
-              Laprida 450, T4000IFJ San Miguel de Tucumán, Tucumán</p>
-            <p>
-              <li class="fas fa-phone"></li>
-              +54-38145555</p>
-          </div>
-          <div class="footer-col col-md-3 col-lg-3 col-xl-3 mx-auto m-3 text-center">
-            <h4 class="mb-4 list-unstyled list-inline">Redes Sociales</h4>
-            <hr class="mb-4">
-            <div class="social-links list-inline-item">
-              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-          <div class="footer-col col-md-1 col-lg-1 col-xl-1 mx-auto m-3">
-            <p class="text-center mt-5"> &#169; Copyright todos los derechos reservados.</p>
-          </div>
-        </div>
-      </div>
-    </footer> -->
-    
-    
-    
-    
-    
+  
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
     
 </body>

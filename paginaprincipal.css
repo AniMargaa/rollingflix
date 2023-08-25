@@ -1,30 +1,33 @@
 .front-page{
     font-size: 16px;
     min-height: 40.62em;
+    color: white;
+    background: url(./img/oOpUVC7LGK87epof3DphR1A88sL.jpg);
     background-position: center center;
     background-size: cover;
-    margin-bottom: 3.12em; 
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
 }
-
-.front-page h1{
-    font-size: 1.5rem;
-    color: white;
-    position: absolute;
-    top: 200px;
-    left: 15px;
+.front-page .container{
+    margin: 0 auto;
+    margin-bottom: 25.50em;
+    padding: 10px;
 }
-.front-page p{
-    position: absolute;
-    font-size: 17px;
-    color: rgb(255, 233, 233);
-    top: 250px;
-    left: 17px;
-    width: 450px;
-
+.front-page .title{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
 }
-
+.front-page .description{
+            font-weight: normal;
+            font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
 .front-page button{
-    position: absolute;
+
     width: 120px;
     height: 40px;
     color:rgb(211, 208, 208); ;
@@ -34,19 +37,6 @@
     border: solid 1px;
     border-radius: 6px;
 }
-
-.btn img{
-    width: 20px;
-    height: 20px;
-    border-radius: 100px;
-    top: 10px;
-    left: 10px;
-    display: inline;
+.titleCarousel{
+    font-size: 30px;
 }
-
-.btn h3{
-    font-size: 13px;
-    display: inline;
-    padding-left: 5px;
-}
-

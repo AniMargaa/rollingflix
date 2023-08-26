@@ -1,0 +1,11 @@
+
+body{
+    background-image: url('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C714E8792D27EBC64A1C8DF1483592DCED20DDD20EB2A375C94596F19C0E451A/scale?width=1200&aspectRatio=1.78&format=jpeg');
+    height: 100vh  ;
+
+}
+
+.about-us .card-body.content {
+  height: 100vh;
+  overflow: scroll;
+}

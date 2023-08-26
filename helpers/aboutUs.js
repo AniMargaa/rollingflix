@@ -8,10 +8,10 @@ class Member {
   }
 
 let members = [
-  new Member('Mario', "Santos", "Logistica y planificación", "MarioSantos"),
-  new Member('Pablo', "Lamponne", "Técnica y movilidad", "PabloLamponne"),
-  new Member('Emilio', "Ravenna", "Caracterización", "EmilioRavenna"),
-  new Member('Gabriel', "Medina", "Investigación", "GabrielMedina")
+  new Member('Joaquin', "Severini", "Apasionado por la tecnología, video juegos, música y películas.", "JoaquinSeverini"),
+  new Member('Anabella', "Margagliotti", "Disfruto las actividades al aire libre y hacer deporte. Soy estudiante de Recursos Humanos.", "AnabellaMargagliotti"),
+  new Member('Lucas', "Ibanez", " Me encanta la actividad fisica y los videojuegos. Siempre busco aprender algo nuevo. ", "LucasIbanez"),
+  new Member('Ivan', "Leguizamon", " 38 años, estudie ingeniería en computación en la facultad de ciencias exactas, la programacion es algo que me apasiona", "IvanLeguizamon")
 ];
 
 const membersRow = document.getElementById('aboutUsRow');
@@ -24,7 +24,7 @@ members.forEach(member => {
         <img src="../assets/aboutUs/${member.picture}.jpg" class="card-img-top" alt="${member.picture}">
         <div class="card-body">
             <h5 class="card-title">${member.name} ${member.lastName}</h5>
-            <span class="badge bg-dark text-light">${member.skill}</span>
+            <span>${member.skill}</span>
         </div>
     </div>
     `;

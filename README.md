@@ -1,2 +1,0 @@
-# Joaks
-Aprendes o aprendes

@@ -1,0 +1,17 @@
+header{
+  position: sticky;
+}
+
+.bgImg{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+.about-us .card-body.content {
+  
+  height: 77vh;
+  overflow: scroll;
+
+}

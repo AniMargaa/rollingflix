@@ -11,7 +11,7 @@ let members = [
   new Member('Joaquin', "Severini", "Apasionado por la tecnología, video juegos, música y películas.", "JoaquinSeverini"),
   new Member('Anabella', "Margagliotti", "Disfruto las actividades al aire libre y hacer deporte. Soy estudiante de Recursos Humanos.", "AnabellaMargagliotti"),
   new Member('Lucas', "Ibanez", " Me encanta la actividad fisica y los videojuegos. Siempre busco aprender algo nuevo. ", "LucasIbanez"),
-  new Member('Ivan', "Leguizamon", " 38 años, estudie ingeniería en computación en la facultad de ciencias exactas, la programacion es algo que me apasiona", "IvanLeguizamon")
+  new Member('Ivan', "Leguizamon", " 38 años, estudie ingeniería en computación en la facultad de ciencias exactas, la programacion es algo que me apasiona.", "IvanLeguizamon")
 ];
 
 const membersRow = document.getElementById('aboutUsRow');

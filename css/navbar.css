@@ -1,0 +1,32 @@
+
+.container {
+    width: 90%;
+    height: 55px;
+    margin: 0px;
+}
+header {
+    padding: 5px ;
+}
+header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header .logo{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 48px ;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar-nav a{
+    font-size: 20px;
+}
+#navbarNav{
+
+    background-color: rgba(0, 0, 0, 0.5)!important;
+
+}
+

@@ -79,7 +79,7 @@ const agregarUsuario = function () {
         localStorage.setItem("usuarioLogeado", JSON.stringify(result[0].username));
 
         if (result[0].username === 'admin') {
-          location.replace("../admin.html");
+          location.replace("./admin.html");
           return;
         }
 

@@ -1,9 +1,9 @@
  let crearPelicula = document.getElementById("crearPelicula"),
- portada = document.getElementById("portada"),
- titulo = document.getElementById("titulo"),
- categoria = document.getElementById("categoria"),
- descripcion = document.getElementById("descripcion"),
- enviarBtn = document.querySelector(".submit"),
+ portadaPelicula = document.getElementById("portada"),
+ tituloPelicula = document.getElementById("titulo"),
+ categoriaPelicula = document.getElementById("categoria"),
+ descripcionPelicula = document.getElementById("descripcion"),
+ enviarBtn = document.querySelector(".enviar"),
  peliculaDatos = document.getElementById("entrada-peliculas"),
  modal = document.getElementById("crearPeliculas"),
  tituloModal = document.querySelector("#crearPeliculas .modal-title")
@@ -25,26 +25,33 @@ function showInfo(){
         <td>${elemento.categoria}</td>
         <td>${elemento.descripcion}</td>
         <td><input type="checkbox"</td>
-        <td><button class="btn btn-success mx-2" onclick="editPelicula(${index}, "${elemento.portada}", "${elemento.titulo}", "${elemento.categoria}", "${elemento.descripcion}")" data-bs-toggle="modal" data-bs-target="#CrearPeliculas"><i class="bi bi-pencil-square"></i></button><button class="btn btn-danger" onclick="eliminarPelicula(${index})"><i class="bi bi-trash"></i></button></td>
+        <td><button class="btn btn-success mx-2" onclick='editPelicula(${index}, "${elemento.portada}", "${elemento.titulo}", "${elemento.categoria}", "${elemento.descripcion}")' data-bs-toggle="modal" data-bs-target="#CrearPeliculas"><i class="bi bi-pencil-square"></i></button><button class="btn btn-danger" onclick="eliminarPelicula(${index})"><i class="bi bi-trash"></i></button></td>
         </tr>
         `
         peliculaDatos.innerHTML += crearElemento
     })
+    
 }
 showInfo()
 
 
 function editPelicula(index, portada, titulo, categoria, descripcion){
+    console.log("entro")
+    console.log(index);
    isEdit = true
    editId = index
+   console.log(editId);
    portadaPelicula.value = portada
    tituloPelicula.value = titulo
    categoriaPelicula.value = categoria
    descripcionPelicula.value  = descripcion
 
+
    enviarBtn.innerText = "Editar"
    tituloModal.innerText = "Editar la pelicula"
+   
 }
+
 
 function eliminarPelicula(index){
     if (confirm("Desea eliminar la pelicula?")){
@@ -72,13 +79,13 @@ const datosPeliculas = {
 
     localStorage.setItem("perfilPelicula", JSON.stringify(getData))
 
-    enviarBtn.innerText = "Subir" 
-    tituloModal.innerHTML = "Ingrese Pelicula"
 
-    showInfo()
+
+    
 
     crearPelicula.reset()
 
-    modal.style.display = "none"
-    document.querySelector(".modal-backdrop").remove()
+    
+    
+    showInfo()
 })

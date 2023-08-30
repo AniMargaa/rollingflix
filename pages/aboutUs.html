@@ -23,7 +23,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end bg-dark" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav" id="navbarNavList">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
@@ -36,12 +36,23 @@
             <li class="nav-item">
               <a class="nav-link" href="./error404.html">Favoritos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./register.html">Registro</a>
-            </li>
+            <script>
+              let menu = document.getElementById("navbarNavList");
+              if (localStorage.getItem("usuarioLogeado") == null) {
+                menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>';
+                menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="./register.html">Registro</a></li>';
+              } else {
+                  menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="#" onClick="localStorage.removeItem(\'usuarioLogeado\');location.reload()">Logout</a></li>';
+              }
+              /*
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/register.html">Registro</a>
+              </li>
+              */
+            </script>
           </ul>
         </div>
       </div>

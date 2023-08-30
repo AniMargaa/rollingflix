@@ -39,10 +39,10 @@
             <script>
               let menu = document.getElementById("navbarNavList");
               if (localStorage.getItem("usuarioLogeado") == null) {
-                menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>';
+                menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="./login.html">Ingresar</a></li>';
                 menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="./register.html">Registro</a></li>';
               } else {
-                  menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="#" onClick="localStorage.removeItem(\'usuarioLogeado\');location.reload()">Logout</a></li>';
+                  menu.innerHTML += '<li class="nav-item"><a class="nav-link" href="#" onClick="localStorage.removeItem(\'usuarioLogeado\');location.reload()">Salir</a></li>';
               }
               /*
               <li class="nav-item">

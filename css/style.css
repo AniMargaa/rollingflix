@@ -1,7 +1,20 @@
 body{
   background-color: black;
-  
 }
+#mainLogin{
+  max-height: 100%;
+  height: 700px;
+}
+.background-img{
+  background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C714E8792D27EBC64A1C8DF1483592DCED20DDD20EB2A375C94596F19C0E451A/scale?width=1200&aspectRatio=1.78&format=jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -50px;
+}
+.bodyMain{
+  overflow-x: hidden;
+}
+
 .padreFormulario{
     width: 400px;
 }
@@ -20,7 +33,7 @@ body{
     position: absolute;
   
     z-index: -1;
-    height: 155vh;
+    height: 100vh;
   
     width: 100%;
     top: 0;
@@ -30,8 +43,7 @@ body{
     margin-top: auto;
   }
   .text-center{
-    /* color: #6610f2; */
-    color: #ffffff;
+    color: #000000;
   }
   .field {
     margin-bottom: 10px;
@@ -250,7 +262,7 @@ body{
   .video-fondo {
     display: none;
   }
-  .card {
+  #mapa{
     display: none;
   }
 }
@@ -392,7 +404,8 @@ header{
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 0;
+  z-index: -1;
+
 }
 
 .about-us .card-body.content {
@@ -400,4 +413,8 @@ header{
   height: 77vh;
   overflow: scroll;
 
+}
+
+#card-body{
+  height: 280px;  
 }

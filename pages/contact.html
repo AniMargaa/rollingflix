@@ -9,7 +9,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link
         rel="shortcut icon"
         href="/assets/rollingflix.png"
@@ -26,11 +26,11 @@
   emailjs.init('u-Z-1TNYdO1j_QBBX')
 </script>
   </head>
-  <body>
+  <body class="bodyMain">
     
     <header class="fixed-top bg-black">
       <nav class="navbar navbar-expand-lg navbar-dark ">
-        <div class="container">
+        <div id="navbarId"class="container">
           <a class="logo" href="../index.html">RollingFlix</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
                 <a class="nav-link" href="./aboutUs.html">Acerca de</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Favoritos</a>
+                <a class="nav-link" href="./error404.html">Favoritos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./login.html">Login</a>
@@ -63,53 +63,55 @@
       </header>
     <!--ACA COMIENZA CONTACTO-->
     <!--fondo de pantalla-->
-    <div >
-        <video class="caja-imagen" autoplay loop muted poster="/assets/PortadaContacto.jpg">
-            <source src="/assets/production_id_4010131 (2160p).mp4" />
-        </video>
-      </div>
-    
-    <div class="container">
-        <div class="row">
-        <h2 class="text-center">Contacto</h2>
-        <div class="p-5 padreFormulario">
-          <form id="form">
-            <div class="field">
-              <label for="from_name">Su nombre</label>
-              <input type="text" name="from_name" id="from_name" required>
-            </div>
-            <div class="field">
-              <label for="message">Mensaje</label>
-              <input type="text" name="message" id="message" required>
-            </div>
-            <div class="field">
-              <label for="email_id">Su correo electronico</label>
-              <input type="text" name="email_id" id="email_id" required>
-            </div>
-
-          
-            <input type="submit" id="button" value="Enviar mensaje" >
-          </form>
-        
-
-        </div>      
-
-
-        <!--AQUI VA UNA TARJETA CON UN  MAPA-->
-        
-        <div class="card" style="width: 730px;height: 500px;">
-          <h5 class="card-title">Nuestras oficinas</h5>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.456221693976!2d-65.20461462481227!3d-26.82543798956237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c19e9a5e567%3A0x8e8e775cef3cfcad!2sLaprida%20450%2C%20T4000IFJ%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1693113490537!5m2!1ses-419!2sar" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="card-body">
-              
-              <p class="card-text"></p>    
-            </div>
+    <main class="pt-5">
+        <div >
+          <video class="caja-imagen" autoplay loop muted poster="/assets/PortadaContacto.jpg">
+              <source src="/assets/production_id_4010131 (2160p).mp4" />
+          </video>
         </div>
-      </div>
-        
-    </div>
+      
+      <div class="container">
+          <div class="row">
+          <h2 class="text-center">Contacto</h2>
+          <div class="p-5 padreFormulario">
+            <form id="form">
+              <div class="field">
+                <label for="from_name">Su nombre</label>
+                <input type="text" name="from_name" id="from_name" required>
+              </div>
+              <div class="field">
+                <label for="message">Mensaje</label>
+                <input type="text" name="message" id="message" required>
+              </div>
+              <div class="field">
+                <label for="email_id">Su correo electronico</label>
+                <input type="text" name="email_id" id="email_id" required>
+              </div>
   
+            
+              <input type="submit" id="button" value="Enviar mensaje" >
+            </form>
+          
+  
+          </div>      
+  
+  
+          <!--AQUI VA UNA TARJETA CON UN  MAPA-->
+          
+          <div id="mapa"class="card mt-5 mb-4 " style="width: 730px;height: 500px;">
+            <h5 class="card-title">Nuestras oficinas</h5>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.456221693976!2d-65.20461462481227!3d-26.82543798956237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c19e9a5e567%3A0x8e8e775cef3cfcad!2sLaprida%20450%2C%20T4000IFJ%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1693113490537!5m2!1ses-419!2sar" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                
+                <p class="card-text"></p>    
+              </div>
+          </div>
+        </div>
+          
+      </div>
+    </main>
+    
     <footer class="f-color pt-5 pb-4">
       <div class="text-center text-md-star">
         <div class="row text-center text-md-start">
@@ -161,7 +163,7 @@
       integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/app.js"></script>
+    <script src="../helpers/contact.js"></script>
 
   </body>
 </html>
